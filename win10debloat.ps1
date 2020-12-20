@@ -446,17 +446,7 @@ $irfanview.Add_Click({
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
-$adobereader.Add_Click({ 
-    Write-Host "Installing Adobe Reader DC"
-    choco install adobereader -y
-	$wshell.Popup("Operation Completed",0,"Done",0x0)
-})
 
-$notepad.Add_Click({ 
-    Write-Host "Installing Notepad++"
-    choco install notepadplusplus -y
-	$wshell.Popup("Operation Completed",0,"Done",0x0)
-})
 
 $vlc.Add_Click({ 
     Write-Host "Installing VLC Media Player"
@@ -645,30 +635,30 @@ $Bloatware = @(
         "Microsoft.3DBuilder"
         "Microsoft.AppConnector"
 	    "Microsoft.BingFinance"
-	    "Microsoft.BingNews"
+#	    "Microsoft.BingNews"
 	    "Microsoft.BingSports"
-	    "Microsoft.BingTranslator"
-	    "Microsoft.BingWeather"
+#	    "Microsoft.BingTranslator"
+#	    "Microsoft.BingWeather"
         "Microsoft.GetHelp"
         "Microsoft.Getstarted"
         "Microsoft.Messaging"
         "Microsoft.Microsoft3DViewer"
         "Microsoft.MicrosoftSolitaireCollection"
         "Microsoft.NetworkSpeedTest"
-        "Microsoft.News"
-        "Microsoft.Office.Lens"
+#        "Microsoft.News"
+#        "Microsoft.Office.Lens"
         "Microsoft.Office.Sway"
         "Microsoft.OneConnect"
-        "Microsoft.People"
+#        "Microsoft.People"
         "Microsoft.Print3D"
-        "Microsoft.SkypeApp"
+#        "Microsoft.SkypeApp"
         "Microsoft.StorePurchaseApp"
         "Microsoft.Wallet"
         "Microsoft.Whiteboard"
         "Microsoft.WindowsAlarms"
         "microsoft.windowscommunicationsapps"
         "Microsoft.WindowsFeedbackHub"
-        "Microsoft.WindowsMaps"
+#        "Microsoft.WindowsMaps"
         "Microsoft.WindowsSoundRecorder"
         "Microsoft.ZuneMusic"
         "Microsoft.ZuneVideo"
@@ -705,7 +695,7 @@ $Bloatware = @(
         #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
         #"*Microsoft.BingWeather*"
         #"*Microsoft.MSPaint*"
-        #"*Microsoft.MicrosoftStickyNotes*"
+        "*Microsoft.MicrosoftStickyNotes*"
         #"*Microsoft.Windows.Photos*"
         #"*Microsoft.WindowsCalculator*"
         #"*Microsoft.WindowsStore*"
